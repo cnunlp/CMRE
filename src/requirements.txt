@@ -1,0 +1,15 @@
+pyhocon==0.3.60
+Pillow==8.4.0
+numpy==1.21.4
+scikit-learn==1.3.2
+scipy==1.10.1
+tqdm==4.61.2
+torch>=1.10.0+cu113
+torchvision>=0.11.1+cu113
+xlwt==1.3.0
+transformers==4.34.1
+rejex==0.0.1.1
+conll==0.0.0
+snownlp==0.12.3
+botocore==1.31.72
+
