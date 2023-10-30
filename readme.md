@@ -1,14 +1,16 @@
--code version: PyTorch
+## Code Version
+- PyTorch
 
--pretrained model:https://github.com/ymcui/Chinese-BERT-wwm
+## Pretrained Model
+- [Chinese BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)
 
--data and code : https://github.com/cnunlp/CMRE.
+## Data and Code
+- [CMRE Repository](https://github.com/cnunlp/CMRE)
 
+## 1. Code Structure
 
-
-1.code structure  
-  
-.  
+```plaintext
+.
 ├── src  
 │   ├── metaphor.py  
 │   ├── demo.py  
@@ -28,7 +30,6 @@
     ├── config.json  
     ├── pytorch_model.bin  
     └── vocab.txt  
-
 
 ----
 
