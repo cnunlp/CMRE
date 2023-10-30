@@ -56,28 +56,40 @@
 **pretrained_model**：configuration file, vocab.txt, model
 
 
-2. Running environment
 
-- The operating environment requires the python version to be 3.7 and above. For the operating environment configuration, see `requirements.txt`
+## Running Environment
 
+- **Requirements**: 
+  - Python version **3.7** and above.
+  - Refer to `requirements.txt` for environment configuration.
 
-3. Running the Model
+## Running the Model
 
-①. Selecting the Model:
-Choose the model you wish to run from the following options:
-- FULL
-- STF-None
-- ITC
+### 1. Selecting the Model
 
-②. Adjusting Configuration File (experiments.conf):
-Depending on the chosen model, make sure to modify the experiments.conf file accordingly:
-- For the FULL or ITC models: Ensure the use_span_type parameter is set to true.
-- For the STF-None model: It's crucial to set the use_span_type parameter to false.
+Choose from the following options:
+- **FULL**
+- **STF-None**
+- **ITC**
 
-③. Executing the Command:
-After configuring the parameters based on your model choice, execute the model using one of the following commands:
-- To run directly with Python: python demo.py or python demo_ITC.py
-- If using the shell script, execute: sh test.sh. Remember to specify the model name as an argument, e.g., sh test.sh FULL, sh test.sh STF-None, or sh test.sh ITC.
+### 2. Adjusting Configuration File (`experiments.conf`)
 
-Please double-check the configurations in experiments.conf before running to ensure accurate and expected results.
+Modify the `experiments.conf` based on your model choice:
 
+- **FULL** or **ITC**: Ensure the `use_span_type` parameter is set to `true`.
+- **STF-None**: Crucially set the `use_span_type` parameter to `false`.
+
+### 3. Executing the Command
+
+Execute the model with one of these commands:
+
+- Directly with Python: 
+  - `python demo.py`
+  - `python demo_ITC.py`
+  
+- Using the shell script:
+  - `sh test.sh`
+  - **Note**: Specify the model name as an argument. 
+    - Example: `sh test.sh FULL` 
+
+> **Tip**: Double-check configurations in `experiments.conf` before running to ensure accurate results.
