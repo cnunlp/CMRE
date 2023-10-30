@@ -8,8 +8,8 @@
 
 1.code structure
 
-.
-.
+.  
+.  
 ├── src  
 │   ├── metaphor.py  
 │   ├── demo.py  
