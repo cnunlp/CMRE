@@ -55,13 +55,11 @@
 **pretrained_model**：configuration file, vocab.txt, model
 
 
-
 2. Running environment
 
 - The operating environment requires the python version to be 3.7 and above. For the operating environment configuration, see `requirements.txt`
 
 
- 
 3. Running the Model
 
 ①. Selecting the Model:
