@@ -6,9 +6,8 @@
 
 
 
-1.code structure
-
-.  
+1.code structure  
+  
 .  
 ├── src  
 │   ├── metaphor.py  
