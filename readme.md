@@ -23,7 +23,7 @@
 
 Metaphor identification has traditionally been approached as a sequence labeling or a syntactically related word-pair classification problem. This research introduces a novel formulation, viewing metaphor identification as a relation extraction problem. The paper proposes metaphorical relations, which are connections between two spans in sentences: a target span and a source-related span. This approach allows for more flexible and precise text units beyond single words, capturing the properties of the target and the source. The research also introduces a dataset for Chinese metaphorical relation extraction, consisting of over 4,200 sentences annotated with metaphorical relations, target/source-related spans, and fine-grained span types. The dataset and models aim to bridge the gap between linguistic and conceptual metaphor processing.
 
-[📜 Read the full paper](https://myaidrive.com/6ABGmy6hsiYLDFTY/2312_chinese.pdf)
+[📜 Read the full paper](https://openreview.net/forum?id=RO460OVpev&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DEMNLP%2F2023%2FConference%2FAuthors%23your-submissions))
 
 ---
 
