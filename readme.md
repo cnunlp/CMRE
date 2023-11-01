@@ -102,5 +102,7 @@ It's essential to understand that these variations can arise due to different in
 - **Pretrained Model:** [bert-base-chinese](https://huggingface.co/bert-base-chinese)
 - **BERT Source Code:** [BERT GitHub Repository](https://github.com/google-research/bert)
 - **Dataset and Code:** [CMRE Repository](https://github.com/cnunlp/CMRE)
+- **FULL_model:** [Baidu Netdisk](https://pan.baidu.com/s/1wOAMLpHiPwEkuDPkbYg4ow) (提取码：u0xr)
+  - **Note:** The best seed model for our FULL_model can be found in the provided link.
 
 
