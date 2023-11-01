@@ -92,14 +92,8 @@ Metaphor identification has traditionally been approached as a sequence labeling
 
 > **Tip**: Ensure configurations in `experiments.conf` are correct before execution.
 
-
-
-
----
-
-<a id="anchor-resources"></a>
 ## 📚 Resources
 
-- **Pretrained Model:** [Chinese BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)
+- **Pretrained Model:** [bert-base-chinese](https://huggingface.co/bert-base-chinese)
 - **Dataset and Code:** [CMRE Repository](https://github.com/cnunlp/CMRE)
 
