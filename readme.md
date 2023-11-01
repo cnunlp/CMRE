@@ -27,7 +27,7 @@ Metaphor identification has traditionally been approached as a sequence labeling
 
 ## 📂 Code Structure
 
-```plaintext
+
 .
 ├── 📁 src
 │   ├── 📄 metaphor.py
@@ -50,7 +50,6 @@ Metaphor identification has traditionally been approached as a sequence labeling
     └── 📄 vocab.txt
 
 
-  
 ---
 
 
