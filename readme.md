@@ -1,3 +1,14 @@
+# Chinese Metaphorical Relation Extraction: Dataset and Models(EMNLP2023-findings)
+
+> **Authors:** 
+> [Guiha Chen], 
+> [Tiantian Wu], 
+> [Miaomiao Cheng],
+> [Xu Han], 
+> [Jiefu Gong], 
+> [Shijin Wang], and 
+> [Wei Song].
+> 
 ## Code Version
 - PyTorch
 
