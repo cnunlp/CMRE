@@ -41,9 +41,9 @@ Metaphor identification has traditionally been approached as a sequence labeling
 │   ├── 📄 experiments.conf  
 │   └── 📄 requirements.txt  
 ├── 📁 data  
-│   ├── 📁 dev  
-│   ├── 📁 test  
-│   └── 📁 train  
+│   ├── 📄 dev_data.jsonlines  
+│   ├── 📄 test_data.jsonlines  
+│   └── 📄 train_data.jsonlines  
 └── 📁 pretrain_model  
     ├── 📄 config.json  
     ├── 📄 pytorch_model.bin  
