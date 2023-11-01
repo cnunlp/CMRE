@@ -8,7 +8,7 @@
 ---
 
 ## 📋 Table of Contents
-- [Introduction](##introduction)
+- [Introduction](#introduction)
 - [Code Structure](#code-structure)
 - [Environment and Requirements](#environment-and-requirements)
 - [Running the Model](#running-the-model)
