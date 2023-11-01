@@ -29,25 +29,26 @@ Metaphor identification has traditionally been approached as a sequence labeling
 
 ```plaintext
 .
-├── src/
-│   ├── metaphor.py
-│   ├── demo.py
-│   ├── metrics.py
-│   ├── utils.py
-│   ├── experiments.conf
-│   └── requirements.txt
-├── bert/
-│   ├── modeling.py
-│   ├── optimization.py
-│   └── tokenization.py
-├── data/
-│   ├── dev/
-│   ├── test/
-│   └── train/
-└── pretrain_model/
-    ├── config.json
-    ├── pytorch_model.bin
-    └── vocab.txt
+├── 📁 src
+│   ├── 📄 metaphor.py
+│   ├── 📄 demo.py
+│   ├── 📄 metrics.py
+│   ├── 📄 utils.py
+│   ├── 📄 experiments.conf
+│   └── 📄 requirements.txt
+├── 📁 bert
+│   ├── 📄 modeling.py
+│   ├── 📄 optimization.py
+│   └── 📄 tokenization.py
+├── 📁 data
+│   ├── 📁 dev
+│   ├── 📁 test
+│   └── 📁 train
+└── 📁 pretrain_model
+    ├── 📄 config.json
+    ├── 📄 pytorch_model.bin
+    └── 📄 vocab.txt
+
 
   
 ---
