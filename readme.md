@@ -104,5 +104,7 @@ It's essential to understand that these variations can arise due to different in
 ## 📚 Resources
 
 - **Pretrained Model:** [bert-base-chinese](https://huggingface.co/bert-base-chinese)
+- **BERT Source Code:** [BERT GitHub Repository](https://github.com/google-research/bert)
 - **Dataset and Code:** [CMRE Repository](https://github.com/cnunlp/CMRE)
+
 
