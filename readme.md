@@ -40,10 +40,6 @@ Metaphor identification has traditionally been approached as a sequence labeling
 │   ├── 📄 utils.py  
 │   ├── 📄 experiments.conf  
 │   └── 📄 requirements.txt  
-├── 📁 bert  
-│   ├── 📄 modeling.py  
-│   ├── 📄 optimization.py  
-│   └── 📄 tokenization.py  
 ├── 📁 data  
 │   ├── 📁 dev  
 │   ├── 📁 test  
