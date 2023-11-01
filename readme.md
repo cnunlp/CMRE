@@ -67,25 +67,22 @@ Metaphor identification has traditionally been approached as a sequence labeling
 <a id="anchor-running-the-model"></a>
 ## 🚀 Running the Model
 
-### 1. **Select the Model:** 
+1. **Select the Model:** 
+   
+   #### FULL
+   - **Description:** This is the comprehensive model proposed in the paper. It adopts a pair-wise span type classification manner and enhances the interaction between span type classification and relation extraction. The FULL model views span type classification as a pair-wise task, where the types of two spans are predicted simultaneously since they are closely associated. This approach is crucial for capturing the meaning and structure of metaphors. When using the FULL model, ensure that the `use_span_type` is set to `true` in the configuration.
+   
+   #### STF-None
+   - **Description:** The STF-None model is similar to the FULL model, but it does not utilize span type features during metaphorical relation extraction. Ablation studies in the paper showed that when span type features are removed, there's a decrease in F1 performance for both metaphorical relation extraction and span extraction. For this model, set the `use_span_type` to `false` in the configuration.
+   
+   #### ITC (Independent Span Type Classification)
+   - **Description:** The ITC model replaces the pair-wise span classification module with an independent span type classification module. This means that each span's type is predicted independently, rather than in pairs. However, during metaphorical relation extraction, the span type features are still utilized. The paper indicates that when switching to an independent span type classification, there's a decrease in F1 performance for metaphorical relation extraction and span extraction. When using the ITC model, ensure that the `use_span_type` is set to `true` in the configuration.
 
-#### FULL
-- **Description:** 
-  - This is the comprehensive model proposed in the paper. It adopts a pair-wise span type classification manner and enhances the interaction between span type classification and relation extraction. The FULL model views span type classification as a pair-wise task, where the types of two spans are predicted simultaneously since they are closely associated. This approach is crucial for capturing the meaning and structure of metaphors. When using the FULL model, ensure that the `use_span_type` is set to `true` in the configuration.
-  
-#### STF-None
-- **Description:** 
-  - The STF-None model is similar to the FULL model, but it does not utilize span type features during metaphorical relation extraction. Ablation studies in the paper showed that when span type features are removed, there's a decrease in F1 performance for both metaphorical relation extraction and span extraction. For this model, set the `use_span_type` to `false` in the configuration.
-
-#### ITC (Independent Span Type Classification)
-- **Description:** 
-  - The ITC model replaces the pair-wise span classification module with an independent span type classification module. This means that each span's type is predicted independently, rather than in pairs. However, during metaphorical relation extraction, the span type features are still utilized. The paper indicates that when switching to an independent span type classification, there's a decrease in F1 performance for metaphorical relation extraction and span extraction. When using the ITC model, ensure that the `use_span_type` is set to `true` in the configuration.
-
-### 2. **Adjust Configuration File (`experiments.conf`):** 
+2. **Adjust Configuration File (`experiments.conf`):** 
    - For **FULL** or **ITC**: Set `use_span_type` to `true`.
    - For **STF-None**: Set `use_span_type` to `false`.
 
-### 3. **Execute the Model:** 
+3. **Execute the Model:** 
    - Using Python: 
      - `python demo.py`
      - `python demo_ITC.py`
@@ -94,6 +91,7 @@ Metaphor identification has traditionally been approached as a sequence labeling
      - Example: `sh test.sh FULL`
 
 > **Tip**: Ensure configurations in `experiments.conf` are correct before execution.
+
 
 ---
 
