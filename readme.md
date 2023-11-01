@@ -8,15 +8,17 @@
 ---
 
 ## 📋 Table of Contents
-- [Introduction](#introduction)
-- [Code Structure](#code-structure)
-- [Environment and Requirements](#environment-and-requirements)
-- [Running the Model](#running-the-model)
-- [Resources](#resources)
+- [Introduction](#anchor-introduction)
+- [Code Structure](#anchor-code-structure)
+- [Environment and Requirements](#anchor-environment-and-requirements)
+- [Running the Model](#anchor-running-the-model)
+- [Resources](#anchor-resources)
+
 
 
 ---
 
+<a id="anchor-introduction"></a>
 ## 📌 Introduction
 
 Metaphor identification has traditionally been approached as a sequence labeling or a syntactically related word-pair classification problem. This research introduces a novel formulation, viewing metaphor identification as a relation extraction problem. The paper proposes metaphorical relations, which are connections between two spans in sentences: a target span and a source-related span. This approach allows for more flexible and precise text units beyond single words, capturing the properties of the target and the source. The research also introduces a dataset for Chinese metaphorical relation extraction, consisting of over 4,200 sentences annotated with metaphorical relations, target/source-related spans, and fine-grained span types. The dataset and models aim to bridge the gap between linguistic and conceptual metaphor processing.
@@ -25,6 +27,7 @@ Metaphor identification has traditionally been approached as a sequence labeling
 
 ---
 
+<a id="anchor-code-structure"></a>
 ## 📂 Code Structure
 
 
@@ -53,7 +56,7 @@ Metaphor identification has traditionally been approached as a sequence labeling
 ---
 
 
-
+<a id="anchor-environment-and-requirements"></a>
 ## 🛠 Environment and Requirements
 
 - **Python version:** 3.8 or above.
@@ -61,6 +64,7 @@ Metaphor identification has traditionally been approached as a sequence labeling
 
 ---
 
+<a id="anchor-running-the-model"></a>
 ## 🚀 Running the Model
 
 1. **Select the Model:** 
@@ -84,6 +88,7 @@ Metaphor identification has traditionally been approached as a sequence labeling
 
 ---
 
+<a id="anchor-resources"></a>
 ## 📚 Resources
 
 - **Pretrained Model:** [Chinese BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)
