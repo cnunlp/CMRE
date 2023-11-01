@@ -1,87 +1,84 @@
-# Chinese Metaphorical Relation Extraction: Dataset and Models(EMNLP2023-findings)
+# Chinese Metaphorical Relation Extraction: Dataset and Models
+> **EMNLP 2023-findings**
 
-> **Authors:** 
-> [Guiha Chen], 
-> [Tiantian Wu], 
-> [Miaomiao Cheng],
-> [Xu Han], 
-> [Jiefu Gong], 
-> [Shijin Wang], and 
-> [Wei Song].
-> 
-## Code Version
-- PyTorch
+![Model Version](https://img.shields.io/badge/Model-PyTorch-blue) ![Paper](https://img.shields.io/badge/Paper-EMNLP2023-green)
 
-## Pretrained Model
-- [Chinese BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)
+**Authors:** Guiha Chen, Tiantian Wu, Miaomiao Cheng, Xu Han, Jiefu Gong, Shijin Wang, and Wei Song.
 
-## Data and Code
-- [CMRE Repository](https://github.com/cnunlp/CMRE)
+---
 
-## 1. Code Structure
+## 📋 Table of Contents
+- [Introduction](#introduction)
+- [Code Structure](#code-structure)
+- [Environment and Requirements](#environment-and-requirements)
+- [Running the Model](#running-the-model)
+- [Resources](#resources)
 
-\```
-.
+---
+
+## 📌 Introduction
+
+Metaphor identification has traditionally been approached as a sequence labeling or a syntactically related word-pair classification problem. This research introduces a novel formulation, viewing metaphor identification as a relation extraction problem. The paper proposes metaphorical relations, which are connections between two spans in sentences: a target span and a source-related span. This approach allows for more flexible and precise text units beyond single words, capturing the properties of the target and the source. The research also introduces a dataset for Chinese metaphorical relation extraction, consisting of over 4,200 sentences annotated with metaphorical relations, target/source-related spans, and fine-grained span types. The dataset and models aim to bridge the gap between linguistic and conceptual metaphor processing.
+
+[📜 Read the full paper](https://myaidrive.com/6ABGmy6hsiYLDFTY/2312_chinese.pdf)
+
+---
+
+.  
 ├── src  
-│   ├── metaphor.py  
-│   ├── demo.py  
-│   ├── metrics.py  
-│   ├── utils.py  
-│   ├── experiments.conf  
-│   └── requirements.txt  
+│ ├── metaphor.py  
+│ ├── demo.py  
+│ ├── metrics.py  
+│ ├── utils.py  
+│ ├── experiments.conf  
+│ └── requirements.txt  
 ├── bert  
-│   ├── modeling.py  
-│   ├── optimization.py  
-│   └── tokenization.py  
+│ ├── modeling.py  
+│ ├── optimization.py  
+│ └── tokenization.py  
 ├── data  
-│   ├── dev  
-│   ├── test  
-│   └── train  
+│ ├── dev  
+│ ├── test  
+│ └── train  
 └── pretrain_model  
-    ├── config.json  
-    ├── pytorch_model.bin  
-    └── vocab.txt  
-\```
+├── config.json  
+├── pytorch_model.bin  
+└── vocab.txt  
+  
+---
 
-## 2. Code Explanation
+## 🛠 Environment and Requirements
 
-- **metaphor.py**: Metaphor identification model script.
-- **demo.py**: Training & testing of metaphor identification script.
-- **metrics.py**: Evaluation methods for dev data.
-- **utils.py**: Data conversion and reading script.
-- **experiments.conf**: Parameter configuration file required for code running.
-- **requirements.txt**: Required environment files for the code to run.
-- **bert**: Used to store BERT model-related script files.
-- **data**: Used to store training, validation, and prediction files.
-- **pretrained_model**: Contains configuration file, vocab.txt, and model.
+- **Python version:** 3.8 or above.
+- **Dependencies:** Refer to `requirements.txt` for the complete list.
 
-## 3. Running Environment
+---
 
-- **Requirements**: 
-  - Python version **3.8** and above.
-  - Refer to `requirements.txt` for environment configuration.
+## 🚀 Running the Model
 
-## 4. Running the Model
+1. **Select the Model:** 
+   - FULL
+   - STF-None
+   - ITC
 
-### 1. Selecting the Model
-Choose from the following options:
-- **FULL**
-- **STF-None**
-- **ITC**
+2. **Adjust Configuration File (`experiments.conf`):** 
+   - For **FULL** or **ITC**: Set `use_span_type` to `true`.
+   - For **STF-None**: Set `use_span_type` to `false`.
 
-### 2. Adjusting Configuration File (`experiments.conf`)
-Modify the `experiments.conf` based on your model choice:
-- **FULL** or **ITC**: Ensure the `use_span_type` parameter is set to `true`.
-- **STF-None**: Crucially set the `use_span_type` parameter to `false`.
+3. **Execute the Model:** 
+   - Using Python: 
+     - `python demo.py`
+     - `python demo_ITC.py`
+   - Using the shell script:
+     - `sh test.sh`
+     - Example: `sh test.sh FULL`
 
-### 3. Executing the Command
-Execute the model with one of these commands:
-- Directly with Python: 
-  - `python demo.py`
-  - `python demo_ITC.py`
-- Using the shell script:
-  - `sh test.sh`
-  - **Note**: Specify the model name as an argument. 
-    - Example: `sh test.sh FULL`
+> **Tip**: Ensure configurations in `experiments.conf` are correct before execution.
 
-> **Tip**: Double-check configurations in `experiments.conf` before running to ensure accurate results.
+---
+
+## 📚 Resources
+
+- **Pretrained Model:** [Chinese BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)
+- **Dataset and Code:** [CMRE Repository](https://github.com/cnunlp/CMRE)
+
