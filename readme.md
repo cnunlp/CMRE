@@ -12,7 +12,6 @@
 - [Code Structure](#anchor-code-structure)
 - [Environment and Requirements](#anchor-environment-and-requirements)
 - [Running the Model](#anchor-running-the-model)
-- [Learning Rate Considerations](#anchor-LearningRateConsiderations)
 - [Resources](#anchor-resources)
 
 
@@ -88,13 +87,6 @@ Metaphor identification has traditionally been approached as a sequence labeling
   - Example: `sh test.sh FULL`
 
 > **Tip**: Ensure configurations in `experiments.conf` are correct before execution.
-
-<a id="anchor-LearningRateConsiderations"></a>
-## ⚙️ Learning Rate Considerations
-
-When training deep learning models, especially on smaller or imbalanced datasets, the choice of hyperparameters such as the learning rate can significantly influence the model's performance. In our experiments, we observed that the optimal learning rate might vary depending on the random seed used. While a learning rate of `2e-5` might work best for one seed, another seed might achieve better results with `1e-5` or even `2e-4`.
-
-It's essential to understand that these variations can arise due to different initializations and data splits caused by different random seeds. Therefore, when replicating or extending our experiments, we recommend performing a search over a range of learning rates for each random seed to identify the most suitable rate for your specific setup.
 
 
 ## 📚 Resources
