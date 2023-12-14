@@ -1,4 +1,4 @@
-# Chinese Metaphorical Relation Extraction: Dataset and Models
+# Chinese Metaphorical Relation Extraction
 > **EMNLP 2023-findings**
 
 ![Model Version](https://img.shields.io/badge/Model-PyTorch-blue) ![Paper](https://img.shields.io/badge/Paper-EMNLP2023-green)
