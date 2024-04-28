@@ -94,7 +94,7 @@ Metaphor identification has traditionally been approached as a sequence labeling
 - **Pretrained Model:** [Chinese-BERT-WWM-ext](https://huggingface.co/hfl/chinese-bert-wwm-ext)
 - **BERT Source Code:** [BERT GitHub Repository](https://github.com/google-research/bert)
 - **Dataset and Code:** [CMRE Repository](https://github.com/cnunlp/CMRE)
-- **FULL_model:** [Baidu Netdisk](https://pan.baidu.com/s/1wOAMLpHiPwEkuDPkbYg4ow) (提取码：u0xr)
+- **FULL_model:** [Baidu Netdisk]链接：https://pan.baidu.com/s/1i8-XBClgFYbwJGIQfTk-sg  提取码：oeln 
   - **Note:** The best seed model for our FULL_model can be found in the provided link.
 
 
